@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "TTFirs";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.wrapper {
+  overflow: hidden;
+}/*# sourceMappingURL=main.css.map */
