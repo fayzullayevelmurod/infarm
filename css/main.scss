@@ -559,7 +559,7 @@ span {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
-    width: 356px;
+    max-width: 356px;
     margin: 8px 0 9px 0;
   }
 
@@ -592,6 +592,10 @@ span {
         font-weight: 500;
         line-height: 24px;
         color: #284a74;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 889px;
       }
       .info {
         display: flex;
@@ -633,7 +637,7 @@ span {
 // cards
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(382px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   column-gap: 20px;
   row-gap: 24px;
 }
@@ -1480,3 +1484,5 @@ span {
   margin: 12px 0 8px 0;
 }
 // footer
+
+@import './media';

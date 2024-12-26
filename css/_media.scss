@@ -1,0 +1,151 @@
+@media (max-width: 1600px) {
+  .sidebars .right-side {
+    padding: 0 60px 0 21px;
+  }
+  .intro {
+    gap: 18px;
+    .left-card {
+      width: calc(100% - 363px);
+      padding: 24px 27px 16px 27px;
+    }
+    .event-card {
+      width: 344px;
+      padding: 25px 29px 23px 29px;
+
+      .card-header {
+        gap: 44px;
+        margin-bottom: 26px;
+      }
+      .card-footer__left {
+        gap: 10px;
+      }
+      .like-img {
+        margin-top: -7px;
+        margin-left: 28px;
+      }
+    }
+  }
+  .news .news-swiper__next {
+    right: 0;
+  }
+  .header-left {
+    gap: 82px;
+  }
+  .news-bottom .swiper {
+    padding-top: 53px;
+    .swiper-slide {
+      padding: 12px 14px 6px 15px;
+    }
+  }
+  .news-bottom .swiper-pagination {
+    bottom: 2px;
+  }
+  .news-bottom__swiper {
+    width: 363px;
+    min-width: 363px;
+  }
+  .news-bottom .right {
+    margin-top: 53px;
+  }
+  .events-overview .title-header__title {
+    padding-left: 15px;
+  }
+  .events-overview {
+    margin: 30px 0 53px 0;
+  }
+  .events-overview .calendar-sidebar {
+    width: 344px;
+  }
+  .events-overview .events-sidebar {
+    gap: 18px;
+  }
+  .card-sec .card .heart-icon {
+    margin-top: 7px;
+    margin-right: -5px;
+  }
+  .card-sec .card-info {
+    margin-top: 2px;
+    margin-left: -3px;
+    margin-bottom: 24px;
+  }
+  .card-sec .card .user-jobs {
+    margin-left: -3px;
+  }
+  .card-sec .card .card-footer {
+    margin-left: -6px;
+    gap: 10px;
+  }
+  .card-sec .card .location {
+    height: 26px;
+  }
+  .events-overview .calendar-sidebar {
+    padding: 33px 26px 26px 24px;
+    gap: 30px;
+  }
+  .events-overview .weekdays {
+    padding: 8px 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21.6px;
+  }
+  .events-overview .days {
+    padding: 2px 0px 0 2px;
+  }
+  .events-overview .filter-section {
+    margin-top: 5px;
+  }
+  .events-overview .filter-button {
+    padding: 9px;
+  }
+  .events-overview .filter-options {
+    column-gap: 9px;
+  }
+  .events-overview .topics-container {
+    column-gap: 3px;
+    margin-bottom: 12px;
+  }
+  .events-overview .filter-bottom .primary-btn {
+    padding: 0 16px;
+  }
+  .events-overview .filter-bottom {
+    gap: 23px;
+  }
+  .events-overview .organizer__select {
+    width: 101%;
+    margin-bottom: 14px;
+  }
+  .events-overview .organizer__download {
+    gap: 9px;
+    margin-right: -4px;
+  }
+  .our-speakers .title-header__title {
+    padding-left: 20px;
+  }
+  .our-speakers .title-header {
+    margin-bottom: 23px;
+  }
+  .our-speakers .card-header {
+    margin-bottom: 8px;
+  }
+  .our-speakers .card {
+    padding: 18px 21px 22px 20px;
+  }
+  .our-speakers {
+    margin-bottom: 64px;
+  }
+  .footer-list {
+    gap: 26px;
+  }
+  .footer-info {
+    gap: 25px;
+    & > div {
+      &:first-child {
+        width: 454px;
+      }
+      &:last-child {
+        width: 885px;
+      }
+    }
+  }
+}

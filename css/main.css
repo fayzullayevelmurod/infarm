@@ -551,7 +551,7 @@ span {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
-  width: 356px;
+  max-width: 356px;
   margin: 8px 0 9px 0;
 }
 .news-bottom {
@@ -584,6 +584,10 @@ span {
   font-weight: 500;
   line-height: 24px;
   color: #284a74;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 889px;
 }
 .news-bottom__card .info {
   display: flex;
@@ -620,7 +624,7 @@ span {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(382px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   -moz-column-gap: 20px;
        column-gap: 20px;
   row-gap: 24px;
@@ -1416,4 +1420,155 @@ span {
   text-align: center;
   color: #284a74;
   margin: 12px 0 8px 0;
+}
+
+@media (max-width: 1600px) {
+  .sidebars .right-side {
+    padding: 0 60px 0 21px;
+  }
+  .intro {
+    gap: 18px;
+  }
+  .intro .left-card {
+    width: calc(100% - 363px);
+    padding: 24px 27px 16px 27px;
+  }
+  .intro .event-card {
+    width: 344px;
+    padding: 25px 29px 23px 29px;
+  }
+  .intro .event-card .card-header {
+    gap: 44px;
+    margin-bottom: 26px;
+  }
+  .intro .event-card .card-footer__left {
+    gap: 10px;
+  }
+  .intro .event-card .like-img {
+    margin-top: -7px;
+    margin-left: 28px;
+  }
+  .news .news-swiper__next {
+    right: 0;
+  }
+  .header-left {
+    gap: 82px;
+  }
+  .news-bottom .swiper {
+    padding-top: 53px;
+  }
+  .news-bottom .swiper .swiper-slide {
+    padding: 12px 14px 6px 15px;
+  }
+  .news-bottom .swiper-pagination {
+    bottom: 2px;
+  }
+  .news-bottom__swiper {
+    width: 363px;
+    min-width: 363px;
+  }
+  .news-bottom .right {
+    margin-top: 53px;
+  }
+  .events-overview .title-header__title {
+    padding-left: 15px;
+  }
+  .events-overview {
+    margin: 30px 0 53px 0;
+  }
+  .events-overview .calendar-sidebar {
+    width: 344px;
+  }
+  .events-overview .events-sidebar {
+    gap: 18px;
+  }
+  .card-sec .card .heart-icon {
+    margin-top: 7px;
+    margin-right: -5px;
+  }
+  .card-sec .card-info {
+    margin-top: 2px;
+    margin-left: -3px;
+    margin-bottom: 24px;
+  }
+  .card-sec .card .user-jobs {
+    margin-left: -3px;
+  }
+  .card-sec .card .card-footer {
+    margin-left: -6px;
+    gap: 10px;
+  }
+  .card-sec .card .location {
+    height: 26px;
+  }
+  .events-overview .calendar-sidebar {
+    padding: 33px 26px 26px 24px;
+    gap: 30px;
+  }
+  .events-overview .weekdays {
+    padding: 8px 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21.6px;
+  }
+  .events-overview .days {
+    padding: 2px 0px 0 2px;
+  }
+  .events-overview .filter-section {
+    margin-top: 5px;
+  }
+  .events-overview .filter-button {
+    padding: 9px;
+  }
+  .events-overview .filter-options {
+    -moz-column-gap: 9px;
+         column-gap: 9px;
+  }
+  .events-overview .topics-container {
+    -moz-column-gap: 3px;
+         column-gap: 3px;
+    margin-bottom: 12px;
+  }
+  .events-overview .filter-bottom .primary-btn {
+    padding: 0 16px;
+  }
+  .events-overview .filter-bottom {
+    gap: 23px;
+  }
+  .events-overview .organizer__select {
+    width: 101%;
+    margin-bottom: 14px;
+  }
+  .events-overview .organizer__download {
+    gap: 9px;
+    margin-right: -4px;
+  }
+  .our-speakers .title-header__title {
+    padding-left: 20px;
+  }
+  .our-speakers .title-header {
+    margin-bottom: 23px;
+  }
+  .our-speakers .card-header {
+    margin-bottom: 8px;
+  }
+  .our-speakers .card {
+    padding: 18px 21px 22px 20px;
+  }
+  .our-speakers {
+    margin-bottom: 64px;
+  }
+  .footer-list {
+    gap: 26px;
+  }
+  .footer-info {
+    gap: 25px;
+  }
+  .footer-info > div:first-child {
+    width: 454px;
+  }
+  .footer-info > div:last-child {
+    width: 885px;
+  }
 }/*# sourceMappingURL=main.css.map */
