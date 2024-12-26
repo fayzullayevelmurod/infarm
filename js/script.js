@@ -18,6 +18,17 @@ const speakersSwiper = new Swiper('.our-speakers__swiper', {
     prevEl: '.our-speakers__swiper-prev',
   }
 })
+
+// news-bottom__swiper
+const newsBottomSwiper = new Swiper('.news-bottom__swiper', {
+  slidesPerView: 1,
+  speed: 400,
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  }
+})
 //
 const cards = document.querySelectorAll(".card");
 if (cards) {

@@ -52,6 +52,17 @@ span {
   max-width: 1920px;
   width: 100%;
 }
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: #dee5eb;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: 0 1.5px !important;
+}
+.swiper-pagination-bullet-active {
+  background: #0068f8;
+}
 .swiper-btn {
   width: 46px;
   height: 45px;
@@ -551,6 +562,71 @@ span {
     width: 356px;
     margin: 8px 0 9px 0;
   }
+
+  &-bottom {
+    display: flex;
+    // gap: 20px;
+    .swiper {
+      padding-top: 52px;
+      padding-bottom: 25px;
+      .news-bottom__card {
+        padding-right: 18px;
+      }
+    }
+
+    .swiper-pagination {
+      bottom: -6px;
+    }
+    .right {
+      margin-top: 52px;
+      margin-right: 6px;
+    }
+    &__card {
+      width: 100%;
+      box-shadow: 0px 3px 10px 0px #00000026;
+      padding: 12px 8px 7px 8px;
+      border-radius: 5px;
+      height: 43px;
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #284a74;
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #0068f8;
+      }
+    }
+    &__swiper {
+      margin: 0;
+      min-width: 382px;
+      width: 382px;
+      padding-right: 20px;
+      .slide-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .left-box {
+        display: flex;
+        gap: 8px;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #0068f8;
+      }
+    }
+  }
 }
 // news-section
 
@@ -789,7 +865,7 @@ span {
 // cards
 // events-overview
 .events-overview {
-  margin-top: 54px;
+  margin-top: 39px;
   margin-bottom: 59px;
   .cards {
     flex: 1;
@@ -1174,7 +1250,7 @@ span {
 
 // our-speakers
 .our-speakers {
-  margin-bottom: 162px;
+  margin-bottom: 62px;
   .card-sec .card-info {
     height: 71px;
     margin-bottom: 6px;
@@ -1353,5 +1429,13 @@ span {
       }
     }
   }
+}
+.site-info {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-align: center;
+  color: #284a74;
+  margin: 12px 0 8px 0;
 }
 // footer

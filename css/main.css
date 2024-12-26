@@ -62,6 +62,19 @@ span {
   width: 100%;
 }
 
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: #dee5eb;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: 0 1.5px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0068f8;
+}
+
 .swiper-btn {
   width: 46px;
   height: 45px;
@@ -543,6 +556,68 @@ span {
   width: 356px;
   margin: 8px 0 9px 0;
 }
+.news-bottom {
+  display: flex;
+}
+.news-bottom .swiper {
+  padding-top: 52px;
+  padding-bottom: 25px;
+}
+.news-bottom .swiper .news-bottom__card {
+  padding-right: 18px;
+}
+.news-bottom .swiper-pagination {
+  bottom: -6px;
+}
+.news-bottom .right {
+  margin-top: 52px;
+  margin-right: 6px;
+}
+.news-bottom__card {
+  width: 100%;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1490196078);
+  padding: 12px 8px 7px 8px;
+  border-radius: 5px;
+  height: 43px;
+}
+.news-bottom__card p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #284a74;
+}
+.news-bottom__card .info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.news-bottom__card .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #0068f8;
+}
+.news-bottom__swiper {
+  margin: 0;
+  min-width: 382px;
+  width: 382px;
+  padding-right: 20px;
+}
+.news-bottom__swiper .slide-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.news-bottom__swiper .left-box {
+  display: flex;
+  gap: 8px;
+}
+.news-bottom__swiper h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #0068f8;
+}
 
 .cards {
   display: grid;
@@ -767,7 +842,7 @@ span {
 }
 
 .events-overview {
-  margin-top: 54px;
+  margin-top: 39px;
   margin-bottom: 59px;
 }
 .events-overview .cards {
@@ -1115,7 +1190,7 @@ span {
 }
 
 .our-speakers {
-  margin-bottom: 162px;
+  margin-bottom: 62px;
 }
 .our-speakers .card-sec .card-info {
   height: 71px;
@@ -1290,4 +1365,13 @@ span {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+
+.site-info {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-align: center;
+  color: #284a74;
+  margin: 12px 0 8px 0;
 }/*# sourceMappingURL=main.css.map */
