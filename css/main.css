@@ -102,12 +102,10 @@ span {
 .sidebars {
   display: flex;
   align-items: start;
-  height: 100vh;
   overflow: hidden;
 }
 .sidebars main {
   overflow-y: auto;
-  height: calc(100vh - 98px);
 }
 .sidebars main::-webkit-scrollbar {
   display: none;
@@ -525,7 +523,7 @@ span {
   transition: all 0.2s linear;
 }
 .news .news-swiper__next {
-  right: 0;
+  right: 6px;
 }
 .news .news-swiper__prev {
   left: 0;
@@ -564,19 +562,20 @@ span {
   padding-bottom: 25px;
 }
 .news-bottom .swiper .news-bottom__card {
-  padding-right: 18px;
+  padding-right: 16px;
 }
 .news-bottom .swiper-pagination {
-  bottom: -6px;
+  bottom: 4px;
 }
 .news-bottom .right {
-  margin-top: 52px;
+  margin-top: 50px;
   margin-right: 6px;
+  padding: 10px 9px 6px 16px;
 }
 .news-bottom__card {
   width: 100%;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1490196078);
-  padding: 12px 8px 7px 8px;
+  padding: 10px 9px 6px 11px;
   border-radius: 5px;
   height: 43px;
 }
@@ -589,7 +588,7 @@ span {
 .news-bottom__card .info {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 .news-bottom__card .dot {
   width: 7px;
@@ -599,8 +598,8 @@ span {
 }
 .news-bottom__swiper {
   margin: 0;
-  min-width: 382px;
-  width: 382px;
+  min-width: 402px;
+  width: 402px;
   padding-right: 20px;
 }
 .news-bottom__swiper .slide-box {
@@ -686,7 +685,7 @@ span {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 }
 .card-sec .card-header .user-img {
   width: 57px;
@@ -763,12 +762,14 @@ span {
   color: #8ba0b4;
   margin-top: 4px;
 }
+.card-sec .card .heart-icon {
+  margin-top: 7px;
+}
 .card-sec .card .card-footer {
   display: flex;
   align-items: center;
   gap: 13px;
-  margin-bottom: 18px;
-  margin-top: 20px;
+  margin: 17px 0;
 }
 .card-sec .card .card-footer .user-images {
   display: flex;
@@ -834,6 +835,9 @@ span {
   font-weight: 500;
   line-height: 16.8px;
   color: #284a74;
+  min-width: 137px;
+  text-align: right;
+  height: 48px;
 }
 .title-header .total-events__count {
   font-weight: 800;
@@ -842,13 +846,13 @@ span {
 }
 
 .events-overview {
-  margin-top: 39px;
-  margin-bottom: 59px;
+  margin: 28px 0 51px 0;
 }
 .events-overview .cards {
   flex: 1;
 }
-.events-overview__title {
+.events-overview .title-header__title {
+  padding-left: 10px;
   font-size: 42px;
   font-weight: 500;
   line-height: 50.4px;
@@ -882,10 +886,10 @@ span {
   border: 1px solid #dee5eb;
   box-shadow: 0px 0px 18px 18px rgba(239, 244, 251, 0.8) inset;
   border-radius: 32px;
-  padding: 34px 30px;
+  padding: 34px 23px 34px 30px;
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 29px;
   width: 383px;
 }
 .events-overview .calendar {
@@ -904,7 +908,7 @@ span {
   color: #004976;
 }
 .events-overview .calendar-search {
-  margin-top: 20px;
+  margin-top: 18px;
   position: relative;
   border: 1px solid #dee5eb;
   background: transparent;
@@ -930,7 +934,7 @@ span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 16px;
+  right: 12px;
 }
 .events-overview .month-header {
   font-size: 18px;
@@ -945,17 +949,18 @@ span {
   grid-template-columns: repeat(7, 1fr);
   text-align: center;
   color: #8ba0b4;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   font-size: 14px;
   border-top: 0.8px solid #cccccc;
   border-bottom: 0.8px solid #cccccc;
-  padding: 10px 0;
+  padding: 8px 5px;
 }
 .events-overview .days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
+  gap: 12px;
   text-align: center;
+  padding: 0 5px 0 18px;
 }
 .events-overview .day {
   font-size: 14px;
@@ -980,8 +985,11 @@ span {
   background-color: #0068f8;
   color: white;
 }
+.events-overview .filter-section {
+  margin-top: 8px;
+}
 .events-overview .filter-section:first-child {
-  margin-bottom: 21px;
+  margin-bottom: 25px;
 }
 .events-overview .filter-title {
   font-size: 18px;
@@ -994,8 +1002,8 @@ span {
 .events-overview .filter-options {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
   row-gap: 12px;
 }
 .events-overview .filter-button {
@@ -1010,6 +1018,8 @@ span {
   border-radius: 5px;
   transition: all 0.2s ease;
   height: 36px;
+  text-transform: uppercase;
+  font-family: "TTFirs", sans-serif;
 }
 .events-overview .filter-button:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
@@ -1024,7 +1034,7 @@ span {
 .events-overview .topics-title {
   font-size: 16px;
   color: #64748b;
-  margin-bottom: 16px;
+  margin: 10px 0 8px 0;
 }
 .events-overview .topics-container {
   display: flex;
@@ -1045,6 +1055,7 @@ span {
   font-weight: bold;
   color: #8ba0b4;
   text-transform: uppercase;
+  font-family: "TTFirs", sans-serif;
 }
 .events-overview .topic-button:hover,
 .events-overview .topic-button.active {
@@ -1061,6 +1072,7 @@ span {
   cursor: pointer;
   margin-left: auto;
   display: block;
+  margin-right: 4px;
 }
 .events-overview .show-more:hover {
   text-decoration: underline;
@@ -1084,17 +1096,20 @@ span {
   background: #0068f8;
   border-radius: 5px;
   height: 47px;
-  padding: 0 15px;
+  padding: 0 21px;
   white-space: nowrap;
+  font-family: "TTFirs", sans-serif;
 }
 .events-overview .filter-bottom .reset-filter {
   font-size: 14px;
   font-weight: 800;
   line-height: 16.8px;
   color: #8ba0b4;
+  font-family: "TTFirs", sans-serif;
+  text-align: left;
 }
 .events-overview .organizer {
-  max-width: 600px;
+  margin-top: 5px;
 }
 .events-overview .organizer__title {
   font-size: 18px;
@@ -1102,11 +1117,11 @@ span {
   line-height: 21.6px;
   letter-spacing: -0.01em;
   color: #8ba0b4;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 .events-overview .organizer__select {
   width: 100%;
-  padding: 10px 16px;
+  padding: 8px 11px;
   border: 1px solid #dee5eb;
   border-radius: 5px;
   background-color: white;
@@ -1119,6 +1134,7 @@ span {
   margin-bottom: 16px;
   text-align: left;
   height: 40px;
+  font-family: "TTFirs", sans-serif;
 }
 .events-overview .organizer__select:hover {
   border-color: #2563eb;
@@ -1142,14 +1158,13 @@ span {
   transition: all 0.2s linear;
 }
 .events-overview .organizer__download {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  text-align: right;
-  display: block;
+  justify-content: end;
   color: #0068f8;
   transition: all 0.2s linear;
 }
@@ -1158,6 +1173,7 @@ span {
 }
 .events-overview .dropdown {
   position: relative;
+  font-family: "TTFirs", sans-serif;
 }
 .events-overview .dropdown__content {
   display: none;
@@ -1192,6 +1208,29 @@ span {
 .our-speakers {
   margin-bottom: 62px;
 }
+.our-speakers .card {
+  padding: 18px 25px 22px 20px;
+}
+.our-speakers .swiper-el .next-btn {
+  right: 6px;
+}
+.our-speakers .card-sec .card-info {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+}
+.our-speakers .card-header {
+  margin-bottom: 11px;
+}
+.our-speakers .title-header__title {
+  padding-left: 26px;
+}
+.our-speakers .title-header {
+  margin-bottom: 25px;
+}
+.our-speakers .total-events {
+  min-width: 150px;
+}
 .our-speakers .card-sec .card-info {
   height: 71px;
   margin-bottom: 6px;
@@ -1200,7 +1239,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 24px;
+  margin-top: 21px;
 }
 .our-speakers .card-bottom .youtube-content {
   display: flex;
@@ -1258,7 +1297,7 @@ span {
 .footer .social-media {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 19px;
 }
 .footer .social-media a {
   width: 30px;
@@ -1270,7 +1309,7 @@ span {
 .footer-list {
   display: flex;
   gap: 27px;
-  margin: 37px 0 29px 0;
+  margin: 38px 0 36px 0;
 }
 .footer-list a {
   font-size: 18px;
@@ -1281,7 +1320,7 @@ span {
 .footer-info {
   display: flex;
   align-items: start;
-  gap: 32px;
+  gap: 78px;
 }
 .footer-info a {
   font-size: 12px;
@@ -1289,7 +1328,7 @@ span {
   line-height: 14.4px;
   text-decoration: underline;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   display: block;
   opacity: 0.75;
 }
@@ -1300,11 +1339,11 @@ span {
   font-size: 12px;
   font-weight: bold;
   color: #fff;
-  max-width: 1059.53px;
+  max-width: 1020px;
   line-height: 14.4px;
 }
 .footer-info .age-box {
-  margin-top: 9px;
+  margin-top: 6px;
   border: 1px solid #fff;
   background: transparent;
   border-radius: 5px;
@@ -1328,11 +1367,11 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 53px;
 }
 .footer-bottom .stors {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 .footer-bottom .stors a {
   display: flex;
@@ -1345,7 +1384,10 @@ span {
   border-radius: 24px;
   line-height: 7.5px;
   padding: 9px 11px;
-  height: 39px;
+  height: 40px;
+}
+.footer-bottom .stors a > div {
+  margin-top: 6px;
 }
 .footer-bottom .stors a span {
   font-size: 13.5px;
