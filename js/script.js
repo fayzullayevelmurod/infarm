@@ -22,9 +22,13 @@ const speakersSwiper = new Swiper('.our-speakers__swiper', {
       slidesPerView: 6,
       spaceBetween: 22,
     },
-    1024: {
+    1198: {
       slidesPerView: 5,
       spaceBetween: 22,
+    },
+    1024: {
+      slidesPerView: 4.8,
+      spaceBetween: 20,
     }
   }
 })
