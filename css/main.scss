@@ -914,7 +914,7 @@ span {
     gap: 21px;
     justify-content: space-between;
   }
-  .medai-calendar{
+  .medai-calendar {
     display: none;
   }
   .calendar-sidebar {
@@ -1379,11 +1379,13 @@ span {
     display: flex;
     gap: 27px;
     margin: 38px 0 36px 0;
+    flex-wrap: wrap;
     a {
       font-size: 18px;
       font-weight: bold;
       line-height: 28.8px;
       color: #fff;
+      white-space: nowrap;
     }
   }
 

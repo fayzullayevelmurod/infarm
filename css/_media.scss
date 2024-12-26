@@ -582,9 +582,135 @@ main {
   .card-sec .card .user-jobs .other-count {
     margin-left: 4px;
   }
+  .card-sec .card .user-jobs {
+    margin-left: 10px;
+  }
 }
 
 // 1024
 @media (max-width: 1024px) {
-  
+  .intro .event-card {
+    display: none;
+  }
+  .intro .left-card {
+    width: 100%;
+    height: unset;
+    padding-bottom: 13px;
+    padding-left: 24px;
+  }
+  .sidebars .right-side {
+    padding-right: 22px;
+  }
+  .header {
+    margin: 18px 0 12px 3px;
+  }
+  .intro .left-card .card-bottom {
+    margin-top: 18px;
+  }
+  .news .news-desc {
+    -webkit-line-clamp: 4;
+  }
+  .news-bottom .swiper {
+    padding-top: 35px;
+  }
+  .news-bottom .swiper .swiper-slide {
+    padding: 11px 15px 9px 15px;
+  }
+  .news-bottom__swiper h4 {
+    margin-top: 2px;
+  }
+  .news-bottom .right {
+    margin-top: 34px;
+    padding: 15px 9px 6px 14px;
+  }
+  .title-header__title,
+  .events-overview .title-header__title {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+  .events-overview {
+    margin: 28px 0 54px 0;
+  }
+  .events-overview .title-header__title {
+    padding-left: 13px;
+    letter-spacing: 0px;
+    margin-top: -10px;
+  }
+  .events-sidebar .medai-calendar {
+    padding: 9px 13px;
+  }
+  .events-sidebar .medai-calendar .download-calendar {
+    gap: 10px;
+  }
+  .events-overview .events-sidebar {
+    gap: 27px;
+  }
+  .cards {
+    column-gap: 14px;
+  }
+  .card-sec .card {
+    padding: 26px 25px 24px 26px;
+  }
+  .card-sec .card-header__left {
+    margin: -1px 0 0 -12px;
+  }
+  .card-sec .card .user-jobs {
+    margin-left: 0;
+  }
+  .card-sec .card-info {
+    margin-bottom: 43px;
+  }
+  .card-sec .card .card-footer {
+    margin: 19px 0px 19px -2px;
+  }
+
+  .card-sec .card .user-jobs .other-count,
+  .card-sec .card .user-name {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+  .events-overview {
+    margin: 28px 0 43px 0;
+  }
+  .our-speakers .title-header__title {
+    margin-top: -5px;
+  }
+  .our-speakers .card {
+    padding: 17px 24px 22px 6px;
+
+    .user-jobs {
+      margin-left: 12px;
+    }
+    .card-bottom {
+      margin-top: 20px;
+    }
+    .heart-icon {
+      margin-top: 5px;
+      margin-right: 1px;
+    }
+  }
+  .our-speakers .card-bottom .youtube-content {
+    gap: 5px;
+  }
+  .our-speakers__swiper {
+    padding-right: 26px;
+  }
+  .footer-list {
+    margin: 39px 0 22px 0;
+    gap: 28px;
+    row-gap: 0;
+  }
+  .footer-info > div:first-child {
+    width: 940px;
+  }
+  .footer-info > div:last-child {
+    width: 760px;
+    margin-top: -16px;
+  }
+  .footer-info .age-box {
+    margin-top: 5px;
+  }
+  .footer-bottom {
+    margin-top: 12px;
+  }
 }
