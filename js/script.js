@@ -16,6 +16,16 @@ const speakersSwiper = new Swiper('.our-speakers__swiper', {
   navigation: {
     nextEl: '.our-speakers__swiper-next',
     prevEl: '.our-speakers__swiper-prev',
+  },
+  breakpoints: {
+    1390: {
+      slidesPerView: 6,
+      spaceBetween: 22,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 22,
+    }
   }
 })
 

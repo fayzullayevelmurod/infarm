@@ -336,6 +336,9 @@ span {
       font-weight: 500;
       line-height: 50.6px;
       color: #fff;
+      &.media-block {
+        display: none;
+      }
     }
     .card-bottom {
       display: flex;
@@ -637,7 +640,7 @@ span {
 // cards
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 24px;
 }
