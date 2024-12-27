@@ -246,3 +246,65 @@ showMoreBtn.addEventListener('click', () => {
   })
 })
 
+
+
+const dropDown = document.querySelectorAll(".dropdown");
+
+if (dropDown) {
+  dropDown.forEach(item => {
+    const dropBox = item.querySelector(".drop-box");
+    const dropDownOptions = item.querySelector(".dropdown-options");
+
+    if (dropBox && dropDownOptions) {
+      dropBox.addEventListener("click", () => {
+        dropDown.forEach(otherItem => {
+          const otherDropBox = otherItem.querySelector(".drop-box");
+          const otherDropDownOptions = otherItem.querySelector(".dropdown-options");
+
+          if (otherDropBox && otherDropDownOptions && otherDropBox !== dropBox) {
+            otherDropBox.classList.remove("active");
+            otherDropDownOptions.classList.remove("show");
+          }
+        });
+
+        dropBox.classList.toggle("active");
+        dropDownOptions.classList.toggle("show");
+      });
+    }
+  });
+}
+
+const customSelect = document.querySelector(".custom-select");
+
+if (customSelect) {
+  const selectedBox = document.querySelector(".selected-box");
+  const options = document.querySelector(".options");
+  const selectOptions = document.querySelectorAll(".select-option");
+  const selectedText = selectedBox.querySelector(".selected-text");
+
+  selectedBox.addEventListener("click", (e) => {
+    e.stopPropagation();
+    options.classList.toggle("show");
+    customSelect.classList.toggle("active");
+  });
+
+  selectOptions.forEach(el => {
+    el.addEventListener("click", (e) => {
+      e.stopPropagation();
+      selectedText.textContent = el.textContent;
+      selectOptions.forEach(item => item.classList.remove("active"));
+      el.classList.add("active");
+      options.classList.remove("show");
+      customSelect.classList.remove("active");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+
+    if (!customSelect.contains(e.target)) {
+      options.classList.remove("show");
+      customSelect.classList.remove("active");
+    }
+  });
+
+}

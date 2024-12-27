@@ -63,6 +63,18 @@ span {
   width: 100%;
 }
 
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.breadcrumb-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  color: #284a74;
+}
+
 .swiper-pagination-bullet {
   opacity: 1;
   background: #dee5eb;
@@ -247,11 +259,12 @@ span {
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  padding: 14px 45px 14px 22px;
+  padding: 18px 45px 14px 22px;
   font-size: 20px;
   font-weight: 500;
   line-height: 26.6px;
   color: #284a74;
+  font-family: "TTFirs";
 }
 .header-search input::-moz-placeholder {
   color: #284a74;
@@ -442,8 +455,9 @@ span {
 .intro .event-card .card-category {
   font-size: 14px;
   font-weight: bold;
-  padding: 0 7px;
+  padding: 2px 7px;
   height: 21px;
+  line-height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -992,6 +1006,12 @@ span {
   border-bottom: 0.8px solid #cccccc;
   padding: 8px 5px;
 }
+.events-overview .weekdays > div {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21.6px;
+  color: #8ba0b4;
+}
 .events-overview .days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -1069,8 +1089,12 @@ span {
   max-width: 800px;
 }
 .events-overview .topics-title {
-  font-size: 16px;
-  color: #64748b;
+  font-family: "TTFirs";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21.6px;
+  letter-spacing: -0.01em;
+  color: #8ba0b4;
   margin: 10px 0 8px 0;
 }
 .events-overview .topics-container {
@@ -1093,6 +1117,7 @@ span {
   color: #8ba0b4;
   text-transform: uppercase;
   font-family: "TTFirs", sans-serif;
+  line-height: 19px;
 }
 .events-overview .topic-button:hover,
 .events-overview .topic-button.active {
@@ -1606,6 +1631,211 @@ span {
     margin-bottom: 25px;
   }
 }
+.text-muted {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16.8px;
+  color: #8ba0b4;
+}
+
+.webinar-page .breadcrumb {
+  padding-left: 10px;
+}
+.webinar-page .events-overview {
+  margin: 10px 0 13px 0;
+}
+.webinar-page .sort-section {
+  margin-bottom: 23px;
+}
+
+.sort-section {
+  display: flex;
+  align-items: center;
+}
+.sort-section .left-box {
+  gap: 14px;
+  display: flex;
+  align-items: center;
+}
+.sort-section .custom-select {
+  border: 1px solid #284a74;
+  height: 40px;
+  border-radius: 32px;
+  position: relative;
+  width: 323px;
+}
+.sort-section .custom-select.active {
+  border-bottom-color: transparent;
+  border-radius: 16px 16px 0 0;
+}
+.sort-section .custom-select.active .arrow-down {
+  transform: rotate(180deg);
+}
+.sort-section .custom-select .selected-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 13px 10px 19px;
+  cursor: pointer;
+}
+.sort-section .custom-select .selected-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  color: #284a74;
+}
+.sort-section .custom-select .arrow-down {
+  transition: all 0.2s linear;
+}
+.sort-section .custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 323px;
+  background: #fff;
+  z-index: 100;
+  border-radius: 16px;
+  padding: 10px 13px 10px 19px;
+  border: 1px solid #284a74;
+  margin-left: -1px;
+  display: none;
+}
+.sort-section .custom-select .options.show {
+  border-top-color: transparent;
+  border-radius: 0 0 16px 16px;
+  display: block;
+}
+.sort-section .custom-select li {
+  list-style: none;
+}
+.sort-section .custom-select .options .scroll-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 525px;
+  overflow-y: auto;
+  padding-right: 14px;
+}
+.sort-section .custom-select .options .scroll-box::-webkit-scrollbar {
+  width: 7px;
+  background: transparent;
+}
+.sort-section .custom-select .options .scroll-box::-webkit-scrollbar-thumb {
+  background: #dee5eb;
+}
+.sort-section .custom-select .option {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  color: #284a74;
+  cursor: pointer;
+}
+.sort-section .custom-select .option:hover {
+  color: #0068f8;
+}
+.sort-section .custom-select .select-option.active {
+  color: #0068f8;
+}
+.sort-section .custom-select .drop-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.sort-section .custom-select .drop-box.active .option {
+  font-weight: 600;
+}
+.sort-section .custom-select .drop-box.active .plus-icon::before {
+  display: none;
+}
+.sort-section .custom-select .plus-icon {
+  position: relative;
+  width: 12px;
+  height: 2px;
+  background: #284a74;
+}
+.sort-section .custom-select .plus-icon::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background: #284a74;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sort-section .custom-select .dropdown-option {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  cursor: pointer;
+}
+.sort-section .custom-select .dropdown-option:hover {
+  color: #0068f8;
+}
+.sort-section .custom-select .dropdown-options {
+  display: flex;
+  flex-direction: column;
+  padding-left: 14px;
+  margin-top: 2px;
+  gap: 2px;
+  display: none;
+}
+.sort-section .custom-select .dropdown-options.show {
+  display: block;
+}
+.sort-section .search-box {
+  width: 412px;
+  height: 40px;
+  border: 1px solid #dee5eb;
+  border-radius: 32px;
+  position: relative;
+}
+.sort-section .search-box input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  font-family: "TTFirs";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  border-radius: inherit;
+  color: #284a74;
+}
+.sort-section .search-box input::-moz-placeholder {
+  color: #8ba0b4;
+}
+.sort-section .search-box input::placeholder {
+  color: #8ba0b4;
+}
+.sort-section .search-box .search-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21.6px;
+  color: #0068f8;
+  z-index: 10;
+}
+.sort-section .select-webinar {
+  display: flex;
+  gap: 26px;
+}
+.sort-section .select-webinar a {
+  font-family: "TTFirs";
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #284a74;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+.sort-section .select-webinar a:hover, .sort-section .select-webinar a.active {
+  color: #8ba0b4;
+}
+
 .show-more__card {
   display: none;
 }
@@ -2111,8 +2341,9 @@ main {
   }
   .card-sec .card .user-jobs .box {
     font-size: 12px;
-    line-height: 12px;
+    line-height: 18px;
     height: 18px;
+    padding: 1px 7px;
   }
   .card-sec .card .user-jobs {
     gap: 2px;

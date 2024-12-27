@@ -47,12 +47,23 @@ span {
 }
 .wrapper {
   overflow: hidden;
-  // max-width: 3000px;
   margin: 0 auto;
 }
 .container {
   max-width: 1920px;
   width: 100%;
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &-link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    color: #284a74;
+  }
 }
 .swiper-pagination-bullet {
   opacity: 1;
@@ -242,11 +253,12 @@ span {
       width: 100%;
       height: 100%;
       border-radius: inherit;
-      padding: 14px 45px 14px 22px;
+      padding: 18px 45px 14px 22px;
       font-size: 20px;
       font-weight: 500;
       line-height: 26.6px;
       color: #284a74;
+      font-family: 'TTFirs';
 
       &::placeholder {
         color: #284a74;
@@ -443,11 +455,13 @@ span {
     .card-category {
       font-size: 14px;
       font-weight: bold;
-      padding: 0 7px;
+      padding: 2px 7px;
       height: 21px;
+      line-height: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
+      width: -moz-fit-content;
       width: fit-content;
       color: #8ba0b4;
       border-radius: 5px;
@@ -1014,6 +1028,12 @@ span {
     border-top: 0.8px solid #cccccc;
     border-bottom: 0.8px solid #cccccc;
     padding: 8px 5px;
+    & > div {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 21.6px;
+      color: #8ba0b4;
+    }
   }
 
   .days {
@@ -1102,8 +1122,12 @@ span {
   }
 
   .topics-title {
-    font-size: 16px;
-    color: #64748b;
+    font-family: 'TTFirs';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21.6px;
+    letter-spacing: -0.01em;
+    color: #8ba0b4;
     margin: 10px 0 8px 0;
   }
 
@@ -1127,6 +1151,7 @@ span {
     color: #8ba0b4;
     text-transform: uppercase;
     font-family: 'TTFirs', sans-serif;
+    line-height: 19px;
   }
 
   .topic-button:hover,
@@ -1667,4 +1692,223 @@ span {
     margin-bottom: 25px;
   }
 }
+.text-muted {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16.8px;
+  color: #8ba0b4;
+}
+
+// webinar-page
+.webinar-page {
+  .breadcrumb {
+    padding-left: 10px;
+  }
+  .events-overview {
+    margin: 10px 0 13px 0;
+  }
+  .sort-section {
+    margin-bottom: 23px;
+  }
+}
+.sort-section {
+  display: flex;
+  align-items: center;
+  .left-box {
+    gap: 14px;
+    display: flex;
+    align-items: center;
+  }
+  .custom-select {
+    border: 1px solid #284a74;
+    height: 40px;
+    border-radius: 32px;
+    position: relative;
+    width: 323px;
+    &.active {
+      border-bottom-color: transparent;
+      border-radius: 16px 16px 0 0;
+
+      .arrow-down {
+        transform: rotate(180deg);
+      }
+    }
+    .selected-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 13px 10px 19px;
+      cursor: pointer;
+    }
+    .selected-text {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21.6px;
+      color: #284a74;
+    }
+    .arrow-down {
+      transition: all 0.2s linear;
+    }
+    .options {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 323px;
+      background: #fff;
+      z-index: 100;
+      border-radius: 16px;
+      padding: 10px 13px 10px 19px;
+      border: 1px solid #284a74;
+      margin-left: -1px;
+      display: none;
+
+      &.show {
+        border-top-color: transparent;
+        border-radius: 0 0 16px 16px;
+        display: block;
+      }
+    }
+    li {
+      list-style: none;
+    }
+    .options {
+      .scroll-box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        height: 525px;
+        overflow-y: auto;
+        padding-right: 14px;
+
+        &::-webkit-scrollbar {
+          width: 7px;
+          background: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: #dee5eb;
+        }
+      }
+    }
+
+    .option {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21.6px;
+      color: #284a74;
+      cursor: pointer;
+      &:hover {
+        color: #0068f8;
+      }
+    }
+    .select-option.active {
+      color: #0068f8;
+    }
+    .drop-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      &.active {
+        .option {
+          font-weight: 600;
+        }
+        .plus-icon {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+    .plus-icon {
+      position: relative;
+      width: 12px;
+      height: 2px;
+      background: #284a74;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 12px;
+        background: #284a74;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .dropdown-option {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.2px;
+      cursor: pointer;
+      &:hover {
+        color: #0068f8;
+      }
+    }
+    .dropdown-options {
+      display: flex;
+      flex-direction: column;
+      padding-left: 14px;
+      margin-top: 2px;
+      gap: 2px;
+      display: none;
+
+      &.show {
+        display: block;
+      }
+    }
+  }
+  .search-box {
+    width: 412px;
+    height: 40px;
+    border: 1px solid #dee5eb;
+    border-radius: 32px;
+    position: relative;
+    input {
+      width: 100%;
+      height: 100%;
+      padding: 10px 20px;
+      font-family: 'TTFirs';
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21.6px;
+      border-radius: inherit;
+      color: #284a74;
+      &::placeholder {
+        color: #8ba0b4;
+      }
+    }
+    .search-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 14px;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 21.6px;
+      color: #0068f8;
+      z-index: 10;
+    }
+  }
+  .select-webinar {
+    display: flex;
+    gap: 26px;
+    a {
+      font-family: 'TTFirs';
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 18px;
+      color: #284a74;
+      text-transform: uppercase;
+      transition: all .2s linear;
+      &:hover,
+      &.active {
+        color: #8ba0b4;
+      }
+    }
+  }
+}
+// webinar-page
+
 @import './media';
