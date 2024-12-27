@@ -6,6 +6,15 @@ const newSwiper = new Swiper('.news-swiper', {
   navigation: {
     nextEl: '.news-swiper__next',
     prevEl: '.news-swiper__prev',
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 4,
+    },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    }
   }
 })
 // our-speakers__swiper
@@ -30,9 +39,13 @@ const speakersSwiper = new Swiper('.our-speakers__swiper', {
       slidesPerView: 4.8,
       spaceBetween: 20,
     },
-    768: {
+    992: {
       slidesPerView: 4,
       spaceBetween: 18,
+    },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 0,
     }
   }
 })
@@ -50,11 +63,20 @@ const newsBottomSwiper = new Swiper('.news-bottom__swiper', {
 //
 const cards = document.querySelectorAll(".card");
 if (cards) {
+  const showMoreCard = document.querySelector(".show-more__card");
   cards.forEach(card => {
     const heartBtn = card.querySelector(".heart-icon");
 
     heartBtn.addEventListener("click", () => {
       heartBtn.classList.toggle("active");
+    })
+  })
+  showMoreCard.addEventListener("click", () => {
+    cards.forEach(item => {
+      if (item.classList.contains("media-hide__card")) {
+        item.classList.remove("media-hide__card");
+        showMoreCard.style.display = "none";
+      }
     })
   })
 }
@@ -197,3 +219,30 @@ downloadBtn.addEventListener('click', function (e) {
     console.log('Please select an organizer first');
   }
 });
+
+// media menu
+const openMenuBtn = document.querySelector(".menu-btn");
+const mediManu = document.querySelector(".media-nav");
+const closeMenu = document.querySelector(".close-menu");
+openMenuBtn.addEventListener("click", () => {
+  mediManu.classList.add("show");
+  document.body.style.overflow = "hidden";
+})
+closeMenu.addEventListener("click", () => {
+  mediManu.classList.remove("show");
+  document.body.style.overflow = "";
+})
+
+
+const showMoreBtn = document.querySelector(".our-speakers__swiper .show-more__card");
+const cardOur = document.querySelectorAll(".our-speakers__swiper .card-sec");
+
+showMoreBtn.addEventListener('click', () => {
+  cardOur.forEach(item => {
+    if (item.classList.contains("media-hide__card")) {
+      item.classList.remove("media-hide__card");
+      showMoreBtn.style.display = "none";
+    }
+  })
+})
+

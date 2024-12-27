@@ -20,9 +20,12 @@
     <div class="sidebars">
       <aside class="nav-sidebar">
         <div>
-          <a class="nav-logo" href="#!">
-            <img src="images/nav-logo.svg" alt="logo">
-          </a>
+          <div class="sidebars-logo">
+            <a class="nav-logo" href="#!">
+              <img src="images/nav-logo.svg" alt="logo">
+            </a>
+            <img class="media-logo" src="images/company-logo.svg" alt="">
+          </div>
           <ul class="nav-list">
             <button class="menu-btn">
               <img src="images/icons/menu.svg" alt="">
@@ -92,6 +95,102 @@
           <span>ЭЛ № ФС 77-79078</span>
         </div>
       </aside>
+
+      <!-- media nav -->
+      <div class="media-nav">
+        <div>
+
+          <div class="media-nav__header">
+            <img class="logo" src="images/company-logo.svg" alt="">
+            <button class="close-menu"><img src="images/icons/close.svg" alt=""></button>
+          </div>
+          <div class="search-box">
+            <div class="search">
+              <input type="search" placeholder="Найти">
+              <img src="images/icons/search.svg" alt="">
+            </div>
+            <a href="#!" class="user-box">
+              <svg width="15" height="15" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2878_6281)">
+                  <path
+                    d="M10.47 13.4373C6.85003 13.4373 3.91003 10.4324 3.91003 6.73249C3.91003 3.03255 6.85003 0.0378418 10.47 0.0378418C14.09 0.0378418 17.03 3.04277 17.03 6.74271C17.03 10.4426 14.08 13.4373 10.47 13.4373ZM10.47 2.49084C8.18003 2.49084 6.32003 4.39192 6.32003 6.73249C6.32003 9.07306 8.18003 10.9844 10.47 10.9844C12.76 10.9844 14.63 9.08328 14.63 6.73249C14.63 4.38169 12.76 2.49084 10.47 2.49084Z"
+                    fill="#0068F8" />
+                  <path
+                    d="M2.42 19.8561C2.59 18.6091 3.68 13.4374 10.47 13.4374C15.92 13.4374 17.56 17.5155 18.05 19.8561H20.52C19.91 16.1459 17.32 10.9844 10.47 10.9844C1.27 10.9844 0.11 18.8544 0 19.8561H2.42Z"
+                    fill="#0068F8" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2878_6281">
+                    <rect width="20.51" height="19.8182" fill="#0068F8" transform="translate(0 0.0378418)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="#!">
+                <div class="img-box"><img src="images/icons/youtube.svg" alt="" width="24"></div>
+                <span>Вебинары и трансляции</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <div class="img-box"><img src="images/icons/share-git.svg" alt="" width="24" height="18"></div>
+                <span>Мероприятия</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <div class="img-box"><img src="images/icons/telegram.svg" alt="" width="24" height="18"></div>
+                <span>Новости</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="parent">
+                <div class="img-box"><img src="images/icons/gemin-ai.svg" alt=""  height="28"></div>
+                <div>
+                  <span>Спецпроекты</span>
+                <span class="child">Greenbox <br>
+                  телемед</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <div class="img-box"></div>
+                <span>Докладчики</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <div class="img-box"></div>
+                <span>Тестирование</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <div class="img-box"><img src="images/icons/location.svg" alt=""></div>
+                <span>Контакты</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <div class="img-box"><img src="images/icons/heart.svg" alt=""></div>
+                <span>Избранное 0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="desc">
+          Фармацевтический портал «ИНФАРМ» – специализированный информационный ресурс о фармацевтической промышленности,
+          медицинской промышленности и здравоохранении.
+          Сетевое издание Фармацевтический портал "ИНФАРМ" ЭЛ № ФС 77-79078
+
+        </p>
+      </div>
+      <!-- media nav -->
+
       <div class="right-side">
         <header class="header">
           <div class="header-left">
@@ -229,7 +328,7 @@
                   <div class="news-card">
                     <h4 class="news-date">16 Окт.</h4>
                     <p class="news-desc">
-                      Определены победители
+                      Определены победители <br class="media-br">
                       Международного студенческого фестиваля
                       «GxP-Фест 2024»
 
@@ -266,7 +365,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide media-hide">
                   <div class="news-card">
                     <h4 class="news-date">16 Окт.</h4>
                     <p class="news-desc">
@@ -287,7 +386,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide media-hide">
                   <div class="news-card">
                     <h4 class="news-date">16 Окт.</h4>
                     <p class="news-desc">
@@ -310,6 +409,7 @@
                 </div>
               </div>
             </div>
+            <a href="#!" class="shor-more__news">Все новости</a>
             <div class="news-bottom">
               <div class="news-bottom__swiper swiper ">
                 <div class="swiper-wrapper">
@@ -354,6 +454,7 @@
                 </p>
               </div>
             </div>
+
           </section>
           <!-- news -->
 
@@ -932,7 +1033,7 @@
                   </div>
                 </div>
 
-                <div class="card">
+                <div class="card media-hide__card">
                   <div class="card-header">
                     <div class="card-header__left">
                       <svg width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -996,7 +1097,7 @@
                   </div>
                 </div>
 
-                <div class="card">
+                <div class="card media-hide__card">
                   <div>
                     <div class="card-header">
                       <div class="card-header__left">
@@ -1046,7 +1147,7 @@
                   </div>
                 </div>
 
-                <div class="card blue-card img-card">
+                <div class="card media-hide__card blue-card img-card">
                   <img class="card-bg" src="images/intro-card-bg.png" alt="">
                   <div class="card-header">
                     <div class="card-header__left">
@@ -1111,7 +1212,7 @@
                   </div>
                 </div>
 
-                <div class="card blue-card">
+                <div class="card media-hide__card blue-card">
                   <div>
                     <div class="card-header">
                       <div class="card-header__left">
@@ -1161,7 +1262,7 @@
                   </div>
                 </div>
 
-                <div class="card">
+                <div class="card media-hide__card">
                   <div class="card-header">
                     <div class="card-header__left">
                       <svg width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1236,7 +1337,7 @@
                   </div>
                 </div>
 
-                <div class="card">
+                <div class="card media-hide__card">
                   <div class="card-header">
                     <div class="card-header__left">
                       <svg width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1301,7 +1402,7 @@
                   </div>
                 </div>
 
-                <div class="card">
+                <div class="card media-hide__card">
                   <div class="card-header">
                     <div class="card-header__left">
                       <svg width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1365,7 +1466,7 @@
                   </div>
                 </div>
 
-                <div class="card blue-card">
+                <div class="card media-hide__card blue-card">
                   <div class="card-header">
                     <div class="card-header__left">
                       <svg width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1429,7 +1530,7 @@
                   </div>
                 </div>
 
-                <div class="card blue-card">
+                <div class="card media-hide__card blue-card">
                   <div>
                     <div class="card-header">
                       <div class="card-header__left">
@@ -1478,7 +1579,7 @@
                     <span class="views-count">1,4K</span>
                   </div>
                 </div>
-
+                <button class="show-more__card">Больше событий</button>
               </div>
 
               <div class="calendar-sidebar">
@@ -1898,7 +1999,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card-sec">
+                  <div class="card-sec media-hide__card">
                     <div class="card">
                       <div class="card-header">
                         <div class="user-img">
@@ -1942,7 +2043,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="card-sec">
+                  <div class="card-sec media-hide__card">
                     <div class="card">
                       <div class="card-header">
                         <div class="user-img">
@@ -1986,6 +2087,7 @@
                   </div>
                 </div>
               </div>
+              <button class="show-more__card">Все докладчики</button>
             </div>
           </section>
           <!-- Our speakers -->
@@ -2098,7 +2200,7 @@
               <div>
                 <p>Фармацевтический портал «ИНФАРМ» – специализированный информационный ресурс о фармацевтической
                   промышленности, медицинской промышленности и здравоохранении.
-                  Сетевое издание Фармацевтический портал "ИНФАРМ" ЭЛ № ФС 77-79078
+                  Сетевое издание Фармацевтический портал "ИНФАРМ" ЭЛ <br class="media-br"> № ФС 77-79078
                 </p>
                 <div class="age-box">
                   <span>18+</span>
