@@ -1709,6 +1709,74 @@ span {
   }
   .sort-section {
     margin-bottom: 23px;
+    padding-left: 10px;
+  }
+  .show-more__card {
+    &.primary-btn {
+      display: block;
+      background: #0068f8;
+      color: #fff;
+      height: 47px;
+      width: 100px;
+      margin-top: 18px;
+    }
+  }
+  .media-hide__card {
+    display: none;
+  }
+  .sotr-info {
+    margin-top: 38px;
+    .info-desc {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 26.4px;
+      color: #004976;
+      margin: 49px 0;
+      max-width: 1527px;
+    }
+    .show-more__text {
+      color: #0068f8;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 16.8px;
+    }
+  }
+  .our-speakers .title-header__title {
+    padding-left: 10px;
+  }
+  .sort-section {
+    padding-left: 12px;
+  }
+}
+.badges {
+  display: flex;
+  column-gap: 6px;
+  row-gap: 11px;
+  flex-wrap: wrap;
+  .badge {
+    height: 22px;
+    border: 1px solid #8ba0b4;
+    padding: 4px 7px;
+    width: fit-content;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    span {
+      font-family: 'TTFirs';
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 22px;
+      color: #8ba0b4;
+      margin-top: 3px;
+    }
+    &.active {
+      border-color: #0068f8;
+      span {
+        color: #0068f8;
+      }
+    }
   }
 }
 .sort-section {
@@ -1901,7 +1969,7 @@ span {
       line-height: 18px;
       color: #284a74;
       text-transform: uppercase;
-      transition: all .2s linear;
+      transition: all 0.2s linear;
       &:hover,
       &.active {
         color: #8ba0b4;

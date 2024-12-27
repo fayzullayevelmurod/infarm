@@ -235,16 +235,8 @@ closeMenu.addEventListener("click", () => {
 
 
 const showMoreBtn = document.querySelector(".our-speakers__swiper .show-more__card");
-const cardOur = document.querySelectorAll(".our-speakers__swiper .card-sec");
 
-showMoreBtn.addEventListener('click', () => {
-  cardOur.forEach(item => {
-    if (item.classList.contains("media-hide__card")) {
-      item.classList.remove("media-hide__card");
-      showMoreBtn.style.display = "none";
-    }
-  })
-})
+
 
 
 
