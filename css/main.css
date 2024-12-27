@@ -55,6 +55,7 @@ span {
 
 .wrapper {
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .container {
@@ -1600,6 +1601,11 @@ span {
   margin-top: 30px;
 }
 
+@media (min-width: 1388px) {
+  .site-info {
+    margin-bottom: 25px;
+  }
+}
 .show-more__card {
   display: none;
 }

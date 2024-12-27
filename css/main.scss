@@ -47,6 +47,8 @@ span {
 }
 .wrapper {
   overflow: hidden;
+  // max-width: 3000px;
+  margin: 0 auto;
 }
 .container {
   max-width: 1920px;
@@ -1660,4 +1662,9 @@ span {
   }
 }
 // media-nav
+@media (min-width: 1388px) {
+  .site-info {
+    margin-bottom: 25px;
+  }
+}
 @import './media';
