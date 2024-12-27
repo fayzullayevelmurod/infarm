@@ -1748,6 +1748,20 @@ span {
     padding-left: 12px;
   }
 }
+.events-page {
+  .show-more__card.primary-btn {
+    margin: 40px auto 0 auto;
+  }
+  .events-overview {
+    margin-bottom: 0;
+  }
+  .title-header {
+    margin-bottom: 18px;
+  }
+  .footer {
+    margin-top: 59px;
+  }
+}
 .badges {
   display: flex;
   column-gap: 6px;
@@ -1974,6 +1988,39 @@ span {
       &.active {
         color: #8ba0b4;
       }
+    }
+  }
+}
+.speakers-library {
+  .custom-select-two {
+    width: 149px;
+    .options {
+      width: 149px;
+    }
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(246px, 1fr));
+  }
+  .card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  .youtube-content {
+    align-items: start;
+    display: flex;
+    gap: 10px;
+    .tur,
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+      color: #284a74;
+    }
+    .content-count {
+      font-weight: 800;
     }
   }
 }

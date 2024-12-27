@@ -867,6 +867,16 @@ main {
   .sidebars .right-side {
     margin-top: 47px;
   }
+  .sidebars .right-side {
+    overflow-y: auto;
+    main {
+      height: unset;
+      overflow: hidden;
+    }
+  }
+  .w-full {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1184,5 +1194,19 @@ main {
   }
   .our-speakers .title-header__title {
     margin-bottom: 12px;
+  }
+  .webinar-page .show-more__card.primary-btn {
+    background: transparent;
+    border: 1px solid #0068f8;
+    padding: 0 6px;
+    height: 30px;
+    color: #0068f8;
+    line-height: 28px;
+    width: 76px;
+    margin: 23px auto 0 auto;
+  }
+  .events-page .footer,
+  .webinar-page .footer {
+    margin-top: 37px;
   }
 }
