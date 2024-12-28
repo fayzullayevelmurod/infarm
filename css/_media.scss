@@ -151,6 +151,12 @@
       }
     }
   }
+  .broadcasts-page .speaker-card {
+    width: 449px;
+  }
+  .broadcasts-page .speaker-card {
+    gap: 0;
+  }
 }
 main {
   overflow-x: hidden;
@@ -311,6 +317,21 @@ main {
   }
   .footer-info > div:last-child {
     max-width: 730px;
+  }
+  .broadcasts-page .speaker-card {
+    width: 421px;
+    .media-speaker {
+      display: block;
+    }
+    .speaker-name {
+      margin-bottom: 0;
+    }
+  }
+  .broadcasts-page .speaker-card .speaker-user {
+    margin-bottom: 16px;
+  }
+  .broadcasts-page .speaker-card .speaker-img {
+    display: none;
   }
 }
 
@@ -608,6 +629,32 @@ main {
   .sort-section .left-box {
     flex-wrap: wrap;
   }
+  .broadcasts-page .speaker-card {
+    width: 489px;
+    height: 320px;
+    padding: 37px;
+  }
+  .broadcasts-page .banner-img {
+    height: 320px;
+  }
+  .broadcasts-page .speaker-card .youtube-box {
+    display: none;
+  }
+  .broadcasts-page .speaker-card .swiper {
+    padding-bottom: 0;
+    padding-top: 9px;
+  }
+  .broadcasts-page .speaker-card .card-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .broadcasts-page .speaker-card .speaker-info {
+    margin-bottom: 10px;
+  }
+  .broadcasts-page .speaker-card .card-footer {
+    margin-top: 18px;
+    border: none;
+  }
 }
 
 // 1024
@@ -746,6 +793,31 @@ main {
   .sort-section .custom-select,
   .sort-section .custom-select .options {
     width: 245px;
+  }
+  .broadcasts-page .speaker-card {
+    width: 379px;
+    height: 273px;
+    padding: 37px 25px 17px 31px;
+  }
+  .broadcasts-page .speaker-card .speaker-info {
+    -webkit-line-clamp: 2;
+  }
+  .broadcasts-page .speaker-card .btns {
+    margin-top: 5px;
+  }
+  .broadcasts-page .speaker-card .swiper-btn {
+    width: 25px;
+    height: 25px;
+    img {
+      width: 5px;
+      height: 10px;
+    }
+  }
+  .broadcasts-page .banner-img {
+    height: 273px;
+  }
+  .broadcasts-page .start-webinar__boxes {
+    gap: 20px;
   }
 }
 
@@ -1381,6 +1453,115 @@ main {
   .speakers-library .youtube-content .tur,
   .speakers-library .youtube-content span {
     display: none;
+  }
+  .broadcasts-page .start-webinar__boxes {
+    flex-direction: column;
+  }
+  .broadcasts-page .top-title h2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .broadcasts-page .banner-bottom .time {
+    display: none;
+  }
+  .broadcasts-page .speaker-card {
+    width: 100%;
+    padding: 27px;
+    margin-top: 0;
+  }
+  .broadcasts-page .start-webinar__boxes {
+    gap: 21px;
+  }
+  .broadcasts-page .start-webinar__desc {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .broadcasts-page .webinar-test__title {
+    font-size: 19px;
+    line-height: 22px;
+  }
+  .broadcasts-page .webinar-test__sub-title {
+    font-size: 15px;
+    line-height: 18px;
+    margin: 6px 0;
+  }
+  .broadcasts-page .webinar-test__card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+  .broadcasts-page .start-webinar__desc {
+    margin-top: 65px;
+  }
+  .broadcasts-page .webinar-test .list li {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .broadcasts-page .webinar-test .list {
+    gap: 0;
+  }
+  .broadcasts-page .webinar-test .check-box label {
+    font-size: 11px;
+    line-height: 13px;
+    display: block;
+  }
+  .broadcasts-page .transcript-header h3 {
+    font-size: 19px;
+    line-height: 22px;
+  }
+  .broadcasts-page .transcript-header {
+    margin-bottom: 15px;
+  }
+  .broadcasts-page .transcript p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .broadcasts-page .transcript .more-btn {
+    margin-bottom: 23px;
+  }
+  .broadcasts-page .transcript .catalog-btn {
+    font-size: 14px;
+    line-height: 16px;
+    background: transparent;
+    border: 1px solid #0068f8;
+    color: #0068f8;
+    width: 154px;
+    height: 30px;
+  }
+  .broadcasts-page .webinar-test .start-test {
+    height: 34px;
+    width: 77px;
+    margin-top: 3px;
+  }
+  .broadcasts-page .webinar-test .time-label {
+    margin-bottom: 5px;
+  }
+  .broadcasts-page .webinar-test__sub-title {
+    margin-bottom: 15px;
+  }
+  .broadcasts-page .banner-img {
+    border-radius: 16px;
+    height: 192px;
+  }
+  .broadcasts-page .start-webinar__btns {
+    margin-bottom: 7px;
+  }
+  .broadcasts-page .start-webinar__btns button {
+    width: 112px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 5px;
+  }
+  .broadcasts-page .banner-bottom {
+    margin-top: 7px;
+  }
+  .broadcasts-page .banner-bottom .badge {
+    font-size: 12px;
+    padding: 3px 4px 0 4px;
+  }
+  .broadcasts-page .webinar-test .test-time {
+    justify-content: space-between;
+    align-items: start;
   }
 }
 

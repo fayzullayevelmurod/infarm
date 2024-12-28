@@ -291,7 +291,7 @@ if (selectContainer) {
     const selectedBox = container.querySelector(".selected-box");
     const options = container.querySelector(".options");
     const selectOptions = container.querySelectorAll(".select-option");
-    const selectedText = selectedBox.querySelector(".selected-text");
+    const selectedText = container.querySelector(".selected-text");
 
     selectedBox.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -340,13 +340,15 @@ if (selectContainer.length == 0) {
   const selectedBox = document.querySelector(".selected-box");
   const options = document.querySelector(".options");
   const selectOptions = document.querySelectorAll(".select-option");
-  const selectedText = selectedBox.querySelector(".selected-text");
+  const selectedText = document.querySelector(".selected-text");
 
-  selectedBox.addEventListener("click", (e) => {
-    e.stopPropagation();
-    options.classList.toggle("show");
-    customSelect.classList.toggle("active");
-  });
+  if (selectedBox) {
+    selectedBox.addEventListener("click", (e) => {
+      e.stopPropagation();
+      options.classList.toggle("show");
+      customSelect.classList.toggle("active");
+    });
+  }
 
   selectOptions.forEach(el => {
     el.addEventListener("click", (e) => {
