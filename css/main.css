@@ -3251,6 +3251,70 @@ main {
   .webinar-page .sotr-info {
     margin-top: 48px;
   }
+  .our-speakers .title-header__title {
+    padding-left: 0;
+    text-overflow: ellipsis;
+  }
+  .site-info {
+    width: 100%;
+    background: #0068f8;
+    margin: 0 -16px;
+    color: #fff;
+    padding: 12px 0 8px 16px;
+    z-index: 1;
+    position: relative;
+  }
+  .site-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    right: -50%;
+    background: #0068f8;
+    height: 100%;
+  }
+  .speakers-library .sort-section .left-box {
+    gap: 12px;
+    flex-direction: row;
+  }
+  .speakers-library .sort-section .left-box > div:first-child .custom-select {
+    width: 86px;
+  }
+  .speakers-library .sort-section .left-box > div:first-child .custom-select .options {
+    width: 102%;
+  }
+  .speakers-library .sort-section .left-box > div:nth-child(2) {
+    width: calc(100% - 86px - 12px);
+  }
+  .speakers-library .sort-section .left-box > div:nth-child(2) .custom-select {
+    width: 100%;
+  }
+  .speakers-library .cards {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 18px;
+  }
+  .speakers-library .cards .card {
+    padding: 14px 18px 17px 13px;
+  }
+  .speakers-library .cards .card-info {
+    font-size: 15px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    height: 37px;
+    margin-bottom: 11px;
+  }
+  .speakers-library .card-bottom {
+    margin-top: 15px;
+  }
+  .speakers-library .youtube-content .tur,
+  .speakers-library .youtube-content span {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
   .sort-section .custom-select .options {

@@ -152,28 +152,30 @@ if (topicButtons) {
   });
 
   // Show more/less functionality
-  showMoreButton.addEventListener('click', function (e) {
-    e.preventDefault();
-    const hiddenTopics = document.querySelectorAll('.topic-button.hidden');
+  if (showMoreButton) {
+    showMoreButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      const hiddenTopics = document.querySelectorAll('.topic-button.hidden');
 
-    if (!isExpanded) {
-      // Show hidden elements
-      hiddenTopics.forEach(topic => {
-        topic.classList.remove('hidden');
-        topic.classList.add('visible'); // Add a class for visible state
-      });
-      showMoreButton.textContent = 'Показать меньше';
-    } else {
-      // Remove visible elements
-      const visibleTopics = document.querySelectorAll('.topic-button.visible');
-      visibleTopics.forEach(topic => {
-        topic.classList.add('hidden'); // Completely remove the element
-      });
-      showMoreButton.textContent = 'Показать все 26';
-    }
+      if (!isExpanded) {
+        // Show hidden elements
+        hiddenTopics.forEach(topic => {
+          topic.classList.remove('hidden');
+          topic.classList.add('visible'); // Add a class for visible state
+        });
+        showMoreButton.textContent = 'Показать меньше';
+      } else {
+        // Remove visible elements
+        const visibleTopics = document.querySelectorAll('.topic-button.visible');
+        visibleTopics.forEach(topic => {
+          topic.classList.add('hidden'); // Completely remove the element
+        });
+        showMoreButton.textContent = 'Показать все 26';
+      }
 
-    isExpanded = !isExpanded;
-  });
+      isExpanded = !isExpanded;
+    });
+  }
 
   // Function to log selected topics
   function logSelectedTopics() {
@@ -188,9 +190,11 @@ const select = document.querySelector('.organizer__select');
 const items = document.querySelectorAll('.dropdown__item');
 
 // Toggle dropdown
-select.addEventListener('click', function () {
-  dropdown.classList.toggle('active');
-});
+if (select) {
+  select.addEventListener('click', function () {
+    dropdown.classList.toggle('active');
+  });
+}
 
 // Select item
 items.forEach(item => {
@@ -209,16 +213,18 @@ document.addEventListener('click', function (e) {
 
 // Download calendar functionality
 const downloadBtn = document.querySelector('.organizer__download');
-downloadBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  const selectedOrganizer = select.textContent;
-  if (selectedOrganizer !== 'Выберите организатора') {
-    console.log(`Downloading calendar for: ${selectedOrganizer}`);
-    // Add your download logic here
-  } else {
-    console.log('Please select an organizer first');
-  }
-});
+if (downloadBtn) {
+  downloadBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    const selectedOrganizer = select.textContent;
+    if (selectedOrganizer !== 'Выберите организатора') {
+      console.log(`Downloading calendar for: ${selectedOrganizer}`);
+      // Add your download logic here
+    } else {
+      console.log('Please select an organizer first');
+    }
+  });
+}
 
 // media menu
 const openMenuBtn = document.querySelector(".menu-btn");
@@ -260,9 +266,61 @@ if (dropDown) {
   });
 }
 
-const customSelect = document.querySelector(".custom-select");
+const selectContainer = document.querySelectorAll(".select-container");
 
-if (customSelect) {
+
+if (selectContainer) {
+  selectContainer.forEach(container => {
+    const customSelect = container.querySelector(".custom-select");
+    const selectedBox = container.querySelector(".selected-box");
+    const options = container.querySelector(".options");
+    const selectOptions = container.querySelectorAll(".select-option");
+    const selectedText = selectedBox.querySelector(".selected-text");
+
+    selectedBox.addEventListener("click", (e) => {
+      e.stopPropagation();
+      options.classList.toggle("show");
+      customSelect.classList.toggle("active");
+    });
+
+    selectOptions.forEach(el => {
+      el.addEventListener("click", (e) => {
+        e.stopPropagation();
+        selectedText.textContent = el.textContent;
+        selectOptions.forEach(item => item.classList.remove("active"));
+        el.classList.add("active");
+        options.classList.remove("show");
+        customSelect.classList.remove("active");
+      });
+    });
+
+    document.addEventListener("click", (e) => {
+
+      if (!customSelect.contains(e.target)) {
+        options.classList.remove("show");
+        customSelect.classList.remove("active");
+      }
+    });
+  })
+}
+
+
+//
+const moreSldie = document.querySelector(".our-speakers .show-more__card");
+if (moreSldie) {
+  const card = document.querySelectorAll(".our-speakers .card-sec");
+  moreSldie.addEventListener("click", () => {
+    card.forEach(item => {
+      if (item.classList.contains("media-hide__card")) {
+        item.classList.remove("media-hide__card");
+        moreSldie.style.display = "none"
+      }
+    })
+  })
+}
+
+if (selectContainer.length == 0) {
+  const customSelect = document.querySelector(".custom-select");
   const selectedBox = document.querySelector(".selected-box");
   const options = document.querySelector(".options");
   const selectOptions = document.querySelectorAll(".select-option");
@@ -292,20 +350,4 @@ if (customSelect) {
       customSelect.classList.remove("active");
     }
   });
-
-}
-
-
-//
-const moreSldie = document.querySelector(".our-speakers .show-more__card");
-if (moreSldie) {
-  const card = document.querySelectorAll(".our-speakers .card-sec");
-  moreSldie.addEventListener("click", () => {
-    card.forEach(item => {
-      if (item.classList.contains("media-hide__card")) {
-        item.classList.remove("media-hide__card");
-        moreSldie.style.display = "none"
-      }
-    })
-  })
 }
