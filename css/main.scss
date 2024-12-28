@@ -2061,4 +2061,223 @@ span {
 }
 // webinar-page
 
+// broadcasts-page
+.broadcasts-page {
+  .badge {
+    padding: 4px 7px 1px 7px;
+    border-radius: 5px;
+    border: 1px solid #8ba0b4;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16.8px;
+    color: #8ba0b4;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
+  .top-title {
+    margin-bottom: 36px;
+    h2 {
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 45.6px;
+      letter-spacing: -0.01em;
+      color: #004976;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 16.8px;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+  .start-webinar {
+    &__desc {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 35.2px;
+      color: #004976;
+      margin: 47px 0 29px 0;
+    }
+    &__boxes {
+      display: flex;
+      align-items: stretch;
+      gap: 28px;
+    }
+    &__btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      gap: 10px;
+      button {
+        border: 1px solid #8ba0b4;
+        width: 141px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 19.95px;
+        color: #8ba0b4;
+        transition: all 0.2s linear;
+        &.active,
+        &:hover {
+          border-color: #0068f8;
+          color: #0068f8;
+        }
+      }
+    }
+  }
+  .banner {
+    // width: 799px;
+    flex: 1;
+    &-img {
+      height: 449px;
+      overflow: hidden;
+      width: 100%;
+      border-radius: 32px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+      }
+    }
+  }
+  .banner-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .badge {
+      margin-bottom: 0;
+    }
+    .time {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      span {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 16.8px;
+        color: #284a74;
+      }
+    }
+    margin-top: 19px;
+  }
+  .speaker-card {
+    width: 588px;
+    height: 449px;
+    border: 1px solid #dee5eb;
+    box-shadow: 0px 0px 18px 18px #eff4fbcc inset;
+    background: #fff;
+    margin-top: 55px;
+    padding: 42px 43px 31px 39px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    .swiper {
+      padding-top: 13px;
+      padding-bottom: 27px;
+    }
+    .slider-content {
+      display: flex;
+      align-items: start;
+      gap: 42px;
+    }
+    .speaker-img {
+      width: 117px;
+      height: 117px;
+      border-radius: 50%;
+      border: 1px solid #dee5eb;
+      object-fit: cover;
+      margin-top: -13px;
+    }
+    .card-title {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 36px;
+      color: #004976;
+      margin-bottom: 10px;
+    }
+    .speaker-name {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21.6px;
+      text-decoration: underline;
+      color: #284a74;
+      margin-bottom: 15px;
+    }
+    .speaker-info {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.8px;
+      color: #284a74;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 19px;
+    }
+    .youtube-box {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      img {
+        width: 13px;
+        height: 14px;
+      }
+      .text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.8px;
+        color: #284a74;
+        span {
+          font-weight: 800;
+        }
+      }
+    }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 13px;
+      border-top: 0.5px solid #8ba0b4;
+    }
+    .btns {
+      display: flex;
+      padding-bottom: 19px;
+      justify-content: space-between;
+    }
+    .speaker-swiper__prev {
+      transform: rotate(180deg);
+    }
+    .swiper-btn {
+      transition: all 0.2s linear;
+    }
+    .swiper-button-disabled {
+      opacity: 0;
+    }
+    .swiper-pagination {
+      left: 0;
+      width: fit-content;
+      bottom: -7px;
+    }
+  }
+}
+// broadcasts-page
+
 @import './media';

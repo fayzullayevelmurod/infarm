@@ -1981,6 +1981,218 @@ span {
   line-height: 18px;
 }
 
+.broadcasts-page .badge {
+  padding: 4px 7px 1px 7px;
+  border-radius: 5px;
+  border: 1px solid #8ba0b4;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16.8px;
+  color: #8ba0b4;
+  margin-bottom: 20px;
+}
+.broadcasts-page .footer {
+  margin-top: 40px;
+}
+.broadcasts-page .top-title {
+  margin-bottom: 36px;
+}
+.broadcasts-page .top-title h2 {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 45.6px;
+  letter-spacing: -0.01em;
+  color: #004976;
+  margin: 10px 0;
+}
+.broadcasts-page .top-title p {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 16.8px;
+}
+.broadcasts-page .top-title p span {
+  font-weight: 500;
+}
+.broadcasts-page .start-webinar__desc {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35.2px;
+  color: #004976;
+  margin: 47px 0 29px 0;
+}
+.broadcasts-page .start-webinar__boxes {
+  display: flex;
+  align-items: stretch;
+  gap: 28px;
+}
+.broadcasts-page .start-webinar__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+.broadcasts-page .start-webinar__btns button {
+  border: 1px solid #8ba0b4;
+  width: 141px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 19.95px;
+  color: #8ba0b4;
+  transition: all 0.2s linear;
+}
+.broadcasts-page .start-webinar__btns button.active, .broadcasts-page .start-webinar__btns button:hover {
+  border-color: #0068f8;
+  color: #0068f8;
+}
+.broadcasts-page .banner {
+  flex: 1;
+}
+.broadcasts-page .banner-img {
+  height: 449px;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 32px;
+}
+.broadcasts-page .banner-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.broadcasts-page .banner-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 19px;
+}
+.broadcasts-page .banner-bottom .badge {
+  margin-bottom: 0;
+}
+.broadcasts-page .banner-bottom .time {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.broadcasts-page .banner-bottom .time span {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16.8px;
+  color: #284a74;
+}
+.broadcasts-page .speaker-card {
+  width: 588px;
+  height: 449px;
+  border: 1px solid #dee5eb;
+  box-shadow: 0px 0px 18px 18px rgba(239, 244, 251, 0.8) inset;
+  background: #fff;
+  margin-top: 55px;
+  padding: 42px 43px 31px 39px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.broadcasts-page .speaker-card .swiper {
+  padding-top: 13px;
+  padding-bottom: 27px;
+}
+.broadcasts-page .speaker-card .slider-content {
+  display: flex;
+  align-items: start;
+  gap: 42px;
+}
+.broadcasts-page .speaker-card .speaker-img {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  border: 1px solid #dee5eb;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -13px;
+}
+.broadcasts-page .speaker-card .card-title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #004976;
+  margin-bottom: 10px;
+}
+.broadcasts-page .speaker-card .speaker-name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  text-decoration: underline;
+  color: #284a74;
+  margin-bottom: 15px;
+}
+.broadcasts-page .speaker-card .speaker-info {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  color: #284a74;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 19px;
+}
+.broadcasts-page .speaker-card .youtube-box {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.broadcasts-page .speaker-card .youtube-box img {
+  width: 13px;
+  height: 14px;
+}
+.broadcasts-page .speaker-card .youtube-box .text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  color: #284a74;
+}
+.broadcasts-page .speaker-card .youtube-box .text span {
+  font-weight: 800;
+}
+.broadcasts-page .speaker-card .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 13px;
+  border-top: 0.5px solid #8ba0b4;
+}
+.broadcasts-page .speaker-card .btns {
+  display: flex;
+  padding-bottom: 19px;
+  justify-content: space-between;
+}
+.broadcasts-page .speaker-card .speaker-swiper__prev {
+  transform: rotate(180deg);
+}
+.broadcasts-page .speaker-card .swiper-btn {
+  transition: all 0.2s linear;
+}
+.broadcasts-page .speaker-card .swiper-button-disabled {
+  opacity: 0;
+}
+.broadcasts-page .speaker-card .swiper-pagination {
+  left: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  bottom: -7px;
+}
+
 .show-more__card {
   display: none;
 }
