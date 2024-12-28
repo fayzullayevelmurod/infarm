@@ -155,6 +155,15 @@
 main {
   overflow-x: hidden;
 }
+@media (max-width: 1450px) {
+  .sort-section .custom-select,
+  .sort-section .custom-select .options {
+    width: 306px;
+  }
+  .sort-section .search-box {
+    width: 371px;
+  }
+}
 @media (max-width: 1390px) {
   .intro .event-card {
     width: 303px;
@@ -589,6 +598,16 @@ main {
   .card-sec .card .user-jobs {
     margin-left: 10px;
   }
+  .sort-section .custom-select,
+  .sort-section .custom-select .options {
+    width: 229px;
+  }
+  .sort-section .search-box {
+    width: 297px;
+  }
+  .sort-section .left-box {
+    flex-wrap: wrap;
+  }
 }
 
 // 1024
@@ -716,6 +735,17 @@ main {
   }
   .footer-bottom {
     margin-top: 12px;
+  }
+  .sort-section .search-box {
+    width: calc(100% - 245px - 10px);
+  }
+  .sort-section .left-box {
+    row-gap: 22px;
+    column-gap: 10px;
+  }
+  .sort-section .custom-select,
+  .sort-section .custom-select .options {
+    width: 245px;
   }
 }
 
@@ -1208,5 +1238,85 @@ main {
   .events-page .footer,
   .webinar-page .footer {
     margin-top: 37px;
+  }
+  .sort-section .left-box {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    row-gap: 7px;
+  }
+  .sort-section .custom-select,
+  .sort-section .search-box {
+    width: 100%;
+  }
+  .sort-section .custom-select {
+    height: 37px;
+  }
+  .sort-section .custom-select .selected-box {
+    padding: 7px 13px;
+  }
+  .sort-section .custom-select .arrow-down {
+    width: 10px;
+    height: 5px;
+  }
+  .sort-section .custom-select .options {
+    width: 100.3%;
+  }
+  .sort-section .custom-select .selected-text,
+  .sort-section .custom-select .option,
+  .sort-section .search-box .search-btn,
+  .sort-section .search-box input {
+    font-size: 14px;
+  }
+  .sort-section .search-box {
+    height: 37px;
+  }
+  .sort-section .select-webinar {
+    display: none;
+  }
+  .webinar-page .sort-section {
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  .events-sidebar .medai-calendar {
+    height: 35px;
+  }
+  .events-overview .title-header {
+    height: 30px;
+  }
+  .events-overview .title-header__title,
+  .webinar-page .breadcrumb {
+    padding-left: 0;
+  }
+  .breadcrumb-link {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .sort-section .custom-select .dropdown-option {
+    font-size: 12px;
+  }
+  .webinar-page {
+    .search-resulte {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .webinar-page .sotr-info .info-desc {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .show-more__card {
+    display: flex;
+  }
+  .webinar-page .sotr-info {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sort-section .custom-select .options {
+    width: 100.6%;
   }
 }

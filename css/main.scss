@@ -1704,6 +1704,26 @@ span {
   .breadcrumb {
     padding-left: 10px;
   }
+  .search-resulte {
+    display: none;
+    padding-left: 13px;
+    p {
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 16.8px;
+      color: #284a74;
+      &.resulte {
+        span {
+          color: #00b253;
+        }
+      }
+      &.no-resulte {
+        span {
+          color: #ff0004;
+        }
+      }
+    }
+  }
   .events-overview {
     margin: 10px 0 13px 0;
   }
@@ -2021,6 +2041,21 @@ span {
     }
     .content-count {
       font-weight: 800;
+    }
+  }
+  .webinar-page .sotr-info .info-desc {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 29px 0 48px 0;
+  }
+  .badges {
+    column-gap: 5px;
+    row-gap: 9px;
+
+    .badge {
+      height: 18px;
+      font-size: 12px;
+      line-height: 18px;
     }
   }
 }

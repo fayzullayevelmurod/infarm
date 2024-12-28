@@ -234,12 +234,6 @@ closeMenu.addEventListener("click", () => {
 })
 
 
-const showMoreBtn = document.querySelector(".our-speakers__swiper .show-more__card");
-
-
-
-
-
 const dropDown = document.querySelectorAll(".dropdown");
 
 if (dropDown) {
@@ -299,4 +293,19 @@ if (customSelect) {
     }
   });
 
+}
+
+
+//
+const moreSldie = document.querySelector(".our-speakers .show-more__card");
+if (moreSldie) {
+  const card = document.querySelectorAll(".our-speakers .card-sec");
+  moreSldie.addEventListener("click", () => {
+    card.forEach(item => {
+      if (item.classList.contains("media-hide__card")) {
+        item.classList.remove("media-hide__card");
+        moreSldie.style.display = "none"
+      }
+    })
+  })
 }
