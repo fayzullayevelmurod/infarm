@@ -157,6 +157,14 @@
   .broadcasts-page .speaker-card {
     gap: 0;
   }
+  .webinar-page {
+    .sort-section .search-box {
+      width: 371px;
+    }
+    .sort-section .custom-select .selected-box {
+      width: 306px;
+    }
+  }
 }
 main {
   overflow-x: hidden;
@@ -547,7 +555,7 @@ main {
     font-size: 12px;
     line-height: 18px;
     height: 18px;
-    padding: 1px 7px;
+    padding: 2px 7px 0 7px;
   }
   .card-sec .card .user-jobs {
     gap: 2px;

@@ -56,6 +56,7 @@ span {
 .wrapper {
   overflow: hidden;
   margin: 0 auto;
+  max-width: 1920px;
 }
 
 .container {
@@ -118,16 +119,14 @@ span {
   height: 100vh;
   overflow: hidden;
 }
-.sidebars main {
-  overflow-y: auto;
-  height: calc(100vh - 87px);
-}
 .sidebars main::-webkit-scrollbar {
   display: none;
 }
 .sidebars .right-side {
   padding: 0 29px 0 21px;
   width: calc(100% - 88px);
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .nav-sidebar {
@@ -454,10 +453,9 @@ span {
 }
 .intro .event-card .card-category {
   font-size: 14px;
-  font-weight: bold;
-  padding: 2px 7px;
   height: 21px;
-  line-height: 18px;
+  font-weight: bold;
+  padding: 2px 7px 0 7px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -566,8 +564,9 @@ span {
 }
 .news-card {
   padding: 0 22px 0 30px;
-  border-right: 0.5px dashed #8ba0b4;
+  border-width: 1px;
   height: 100%;
+  border-right: 0.5px dashed #dde0e2;
 }
 .news-date {
   font-size: 14px;
@@ -793,15 +792,18 @@ span {
   gap: 7px;
 }
 .card-sec .card .user-jobs .box {
+  border: 1px solid #8ba0b4;
+  border-radius: 5px;
+  padding: 2px 7px 0px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+}
+.card-sec .card .user-jobs .box .badge-text {
   color: #8ba0b4;
   font-size: 14px;
   font-weight: bold;
-  line-height: 15.8px;
-  text-align: center;
-  padding: 4px 7px;
-  border: 1px solid #8ba0b4;
-  border-radius: 5px;
-  height: 22px;
 }
 .card-sec .card .user-jobs .other-count {
   font-size: 14px;
@@ -1626,11 +1628,6 @@ span {
   margin-top: 30px;
 }
 
-@media (min-width: 1388px) {
-  .site-info {
-    margin-bottom: 25px;
-  }
-}
 .text-muted {
   font-size: 14px;
   font-weight: bold;
@@ -1638,6 +1635,17 @@ span {
   color: #8ba0b4;
 }
 
+@media (min-width: 1728px) {
+  .webinar-page .cards .card {
+    width: 382px;
+  }
+  .webinar-page .sort-section .select-webinar {
+    margin-left: 32px;
+  }
+  .webinar-page .calendar-sidebar {
+    flex: 1;
+  }
+}
 .webinar-page .breadcrumb {
   padding-left: 10px;
 }
@@ -2367,6 +2375,23 @@ button {
   font-family: "TTFirs";
 }
 
+.card-sec .card.blue-card .user-jobs .box .badge-text {
+  color: #fff;
+}
+
+.webinar-page .sort-section .custom-select .selected-box {
+  width: 100%;
+}
+
+@media (min-width: 1728px) {
+  .home-page .card-sec .card {
+    min-width: 382px;
+    max-width: 382px;
+  }
+  .home-page .events-overview .calendar-sidebar {
+    flex: 1;
+  }
+}
 .show-more__card {
   display: none;
 }
@@ -2525,6 +2550,12 @@ button {
   }
   .broadcasts-page .speaker-card {
     gap: 0;
+  }
+  .webinar-page .sort-section .search-box {
+    width: 371px;
+  }
+  .webinar-page .sort-section .custom-select .selected-box {
+    width: 306px;
   }
 }
 main {
@@ -2904,7 +2935,7 @@ main {
     font-size: 12px;
     line-height: 18px;
     height: 18px;
-    padding: 1px 7px;
+    padding: 2px 7px 0 7px;
   }
   .card-sec .card .user-jobs {
     gap: 2px;

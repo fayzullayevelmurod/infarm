@@ -48,6 +48,7 @@ span {
 .wrapper {
   overflow: hidden;
   margin: 0 auto;
+  max-width: 1920px;
 }
 .container {
   max-width: 1920px;
@@ -104,10 +105,9 @@ span {
   align-items: start;
   height: 100vh;
   overflow: hidden;
-
   main {
-    overflow-y: auto;
-    height: calc(100vh - 87px);
+    // overflow-y: auto;
+    // height: calc(100vh - 87px);
 
     &::-webkit-scrollbar {
       display: none;
@@ -116,6 +116,8 @@ span {
   .right-side {
     padding: 0 29px 0 21px;
     width: calc(100% - 88px);
+    overflow-y: auto;
+    height: 100vh;
   }
 }
 
@@ -454,10 +456,10 @@ span {
     }
     .card-category {
       font-size: 14px;
-      font-weight: bold;
-      padding: 2px 7px;
       height: 21px;
-      line-height: 18px;
+      // line-height: 21px;
+      font-weight: bold;
+      padding: 2px 7px 0 7px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -572,8 +574,17 @@ span {
   }
   &-card {
     padding: 0 22px 0 30px;
-    border-right: 0.5px dashed #8ba0b4;
+    border-width: 1px;
     height: 100%;
+    border-right: 0.5px dashed #dde0e2;
+    // border-style: solid; /* Fallback border style */
+    // border-color: #8ba0b4; /* Fallback border color */
+    // /* Modern browsers */
+    // -webkit-border-image: url(../images/icons/border-line.svg) 30 30 30 30 / 1 1
+    //   1 1;
+    // -moz-border-image: url(../images/icons/border-line.svg) 30 30 30 30 / 1 1 1
+    //   1;
+    // border-image: url(../images/icons/border-line.svg) 30 30 30 30/44 0 0 1;
   }
   &-date {
     font-size: 14px;
@@ -807,15 +818,19 @@ span {
       display: flex;
       gap: 7px;
       .box {
-        color: #8ba0b4;
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 15.8px;
-        text-align: center;
-        padding: 4px 7px;
         border: 1px solid #8ba0b4;
         border-radius: 5px;
+        padding: 2px 7px 0px 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 22px;
+
+        .badge-text {
+          color: #8ba0b4;
+          font-size: 14px;
+          font-weight: bold;
+        }
       }
       .other-count {
         font-size: 14px;
@@ -1687,11 +1702,6 @@ span {
   }
 }
 // media-nav
-@media (min-width: 1388px) {
-  .site-info {
-    margin-bottom: 25px;
-  }
-}
 .text-muted {
   font-size: 14px;
   font-weight: bold;
@@ -1701,6 +1711,19 @@ span {
 
 // webinar-page
 .webinar-page {
+  @media (min-width: 1728px) {
+    .cards {
+      .card {
+        width: 382px;
+      }
+    }
+    .sort-section .select-webinar {
+      margin-left: 32px;
+    }
+    .calendar-sidebar {
+      flex: 1;
+    }
+  }
   .breadcrumb {
     padding-left: 10px;
   }
@@ -2459,5 +2482,23 @@ button {
   font-family: 'TTFirs';
 }
 // broadcasts-page
-
+.card-sec .card.blue-card .user-jobs .box .badge-text {
+  color: #fff;
+}
+.webinar-page .sort-section .custom-select .selected-box {
+  width: 100%;
+}
+@media (min-width: 1728px) {
+  .home-page {
+    .card-sec {
+      .card {
+        min-width: 382px;
+        max-width: 382px;
+      }
+    }
+    .events-overview .calendar-sidebar {
+      flex: 1;
+    }
+  }
+}
 @import './media';
