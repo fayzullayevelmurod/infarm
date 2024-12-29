@@ -976,6 +976,7 @@ span {
   font-weight: 500;
   line-height: 21.6px;
   color: #004976;
+  font-family: "TTFirs", sans-serif;
 }
 .events-overview .calendar-search input::-moz-placeholder {
   color: #8ba0b4;
@@ -1109,17 +1110,16 @@ span {
 }
 .events-overview .topic-button {
   border: 1px solid #8ba0b4;
-  padding: 2px 7px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.2s ease;
-  height: 22px;
   font-size: 14px;
   font-weight: bold;
   color: #8ba0b4;
   text-transform: uppercase;
   font-family: "TTFirs", sans-serif;
-  line-height: 19px;
+  padding: 4px 7px 1px 7px;
+  line-height: 16px;
 }
 .events-overview .topic-button:hover,
 .events-overview .topic-button.active {
@@ -1505,6 +1505,8 @@ span {
   justify-content: space-between;
   transition: all 0.2s linear;
   transform: translateX(-100%);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .media-nav.show {
   transform: translateX(0);
@@ -2392,6 +2394,11 @@ button {
     flex: 1;
   }
 }
+.news-bottom .swiper {
+  padding-right: 20px;
+  margin-right: 0;
+}
+
 .show-more__card {
   display: none;
 }
@@ -3261,7 +3268,7 @@ main {
   }
   .nav-sidebar > div {
     display: flex;
-    gap: 19px;
+    gap: 5px;
     justify-content: space-between;
   }
   .nav-sidebar .menu-btn {
@@ -3912,6 +3919,41 @@ main {
   .broadcasts-page .webinar-test .test-time {
     justify-content: space-between;
     align-items: start;
+  }
+  .card-sec .card-info {
+    margin-bottom: 14px;
+    height: 65px;
+  }
+  .our-speakers__swiper .card .user-jobs .box {
+    padding: 0;
+  }
+  .our-speakers__swiper .card .user-jobs .box .badge-text {
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 10.8px;
+    padding: 3px 3px 0 3px;
+    height: 13px;
+    max-width: 122px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .card-sec .card.blue-card .user-jobs .box {
+    padding-top: 3px;
+  }
+  .card-sec .card.blue-card .user-jobs .box .badge-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .home-page .events-overview .title-header__title {
+    margin-bottom: 15px;
+    height: unset;
+  }
+  .home-page .events-overview .title-header {
+    height: unset;
+  }
+  .home-page .events-overview {
+    margin-top: 32px;
   }
 }
 @media (max-width: 480px) {

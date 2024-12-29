@@ -312,9 +312,11 @@ if (selectContainer) {
 
     document.addEventListener("click", (e) => {
 
-      if (!customSelect.contains(e.target)) {
-        options.classList.remove("show");
-        customSelect.classList.remove("active");
+      if (customSelect) {
+        if (!customSelect.contains(e.target)) {
+          options.classList.remove("show");
+          customSelect.classList.remove("active");
+        }
       }
     });
   })
@@ -363,11 +365,51 @@ if (selectContainer.length == 0) {
 
   document.addEventListener("click", (e) => {
 
-    if (!customSelect.contains(e.target)) {
-      options.classList.remove("show");
-      customSelect.classList.remove("active");
+    if (customSelect) {
+      if (!customSelect.contains(e.target)) {
+        options.classList.remove("show");
+        customSelect.classList.remove("active");
+      }
     }
   });
 }
+// window.addEventListener('resize', () => {
+//   const box1 = document.querySelector('.news-bottom__swiper');
+//   const box2 = document.querySelector('.events-overview .card-sec .card');
 
+//   // 2-box ning kengligini olish
+//   const box2Width = box2.offsetWidth;
+
+//   // 1-box ning kengligini 2-box ga tenglashtirish
+//   box1.style.minWidth = box2Width + 20 + 'px';
+//   console.log(box1);
+
+// });
+
+// // Dastlabki holatda ham width ni moslashtirish
+// window.dispatchEvent(new Event('resize'));
+window.addEventListener('resize', () => {
+  const box1 = document.querySelector('.news-bottom__swiper');
+  const box2 = document.querySelector('.events-overview .card-sec .card');
+  const newsBottomCard = document.querySelector('.news-bottom .news-bottom__card.right');
+
+  if (box1 && box2 && newsBottomCard) {
+    // Получаем ширину box2
+    const box2Width = box2.offsetWidth;
+
+    // Устанавливаем ширину box1 равную ширине box2 + 20px
+    box1.style.minWidth = `${box2Width + 20}px`;
+
+    // Рассчитываем ширину news-bottom__card как оставшееся пространство
+    newsBottomCard.style.width = `calc(100% - ${box1.offsetWidth}px)`; // Умножаем на 2, так как box1 также имеет ширину box2
+    console.log(newsBottomCard.style.width);
+    console.log("box1", box1.offsetWidth);
+
+  } else {
+    console.warn('Одно из целевых элементов не найдено.');
+  }
+});
+
+// Инициализация при загрузке страницы
+window.dispatchEvent(new Event('resize'));
 
